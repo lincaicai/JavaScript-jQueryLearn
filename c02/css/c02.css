@@ -1,0 +1,106 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #b6a996;
+    background: url('../images/hobart.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100%;
+}
+
+#content {
+    background-color: #fff;
+    border: 3px double #31373f;
+    color: #31373f;
+    display: inline-block;/*规定元素应该生成的框的类型*/
+    padding: 30px 50px;
+    margin: 20px auto 50px auto;
+    max-width: 580px;
+    min-height: 4em;
+    overflow: auto;/*规定当内容溢出元素框时发生的事情。*/
+    text-align: center;
+}
+
+h1, h2 {
+    text-indent: 100%;/*规定文本块中首行文本的缩进*/
+    white-space: nowrap;/*规定段落中的文本不进行换行*/
+    overflow: hidden;
+}
+
+h1 {
+    width: 278px;
+    height: 112px;
+    margin: 0 auto 0 auto;
+    padding-top: 40px; /*设置元素的上内边距（空间）*/
+    background: url('../images/elderflower-logo.png') no-repeat bottom center;
+}
+
+h2 {
+    width: 286px;
+    height: 18px;
+    margin: 0 auto 20px auto;
+    background: url('../images/custom-sign.png') no-repeat bottom center;
+}
+
+#cost {
+    background-color: #f84c53;
+    color: #fff;
+    width: auto;
+    height: 1em;
+    padding: 0.5em 0.75em;
+    float: right;
+}
+
+#cost {
+    position: relative; /* 生成相对定位的元素，相对于其正常位置进行定位。 */
+    top: 1em;
+    right: 2em;
+} 
+
+a {
+    color: #e3bb5a;
+    text-decoration: none; /* 规定添加到文本的修饰。*/
+}
+
+table {
+    margin: 20px 100px 0 100px;
+}
+
+/* 选择属于其父元素的首个子元素的每个 <td> 元素，并为其设置样式 */
+tr td:first-child {
+    font-weight: bold;
+    padding-right: 20px;/* 设置元素右内边距（空白） */
+}
+/* :before 选择器在被选元素的内容前面插入内容。 */
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: #fff;
+    left: 0;
+    right: 0;
+    height: 20px;
+}
+
+body:before {
+    top: 0;
+}
+
+body:after {
+    bottom: 0;
+    /*对于绝对定位元素，bottom属性设置单位高于/低于包含它的元素的底边。
+    对于相对定位元素，bottom属性设置单位高于/低于其正常位置的元素的底边。*/
+}
+
+body {
+    border-left: 20px solid #fff;
+    border-right: 20px solid #fff;
+}

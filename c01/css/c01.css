@@ -1,0 +1,77 @@
+/* CSS for adding content example */
+
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic); */
+
+@import url("../../fonts/googlefonts.css");
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    background: url("../images/constructive-backdrop.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover; /* Safari 和 Chrome 添加私有属性*/
+    -moz-background-size:cover; /*Firefox 添加私有属性 -moz-background-size 支持；*/
+    -o-background-size:cover; /*Opera 不支持 background-size 属性，添加其私有属性*/
+    background-size: cover;/* 扩展图片来填满元素（保持像素的长宽比）；*/
+    margin: 0; /*外边距*/
+    padding: 0; /*内边距*/
+}
+
+h1, h3, p{
+    float: left;/*float 属性定义元素在哪个方向浮动。*/
+    clear: left;/*规定元素的哪一侧不允许其他浮动元素*/
+    width: 320px;
+    background-color: #fff;
+    color: #5a514c;
+    text-align: center;/*规定元素中的文本的水平对齐方式*/
+}
+
+h1 {
+    margin:50px 0 0 50px;
+    height: 175px;
+    background-image: url("../images/constructive-logo.gif");
+    background-repeat: no-repeat;/* 定义了图像的平铺模式 不重复 */
+    text-indent: -9999px;/* 规定文本块中首行文本的缩进 */
+    border-top: 1px solid #bcbdc0; /* 简写属性把上边框的所有属性设置到一个声明中 */
+    border-left: 1px solid #bcbdc0;
+    border-right: 1px solid #bcbdc0;
+}
+
+h3{
+    margin: 0 0 0 50px;
+    padding: 25px 0 0 0;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 1.8em;/* 相对长度单位。相对于当前对象内文本的字体尺寸。
+    如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸。*/
+    font-style: italic;
+    font-weight: 800;/* 设置文本的粗细 */
+    line-height: 0.80em;/* 设置行间的距离（行高）*/
+    letter-spacing: -0.02em;/* 增加或减少字符间的空白（字符间距） */
+    text-transform: uppercase;/* 控制文本的大小写 */
+    border-left: 1px solid #bcbdc0;
+    border-right: 1px solid #bcbdc0;
+}
+
+p {
+    margin: 0 0 0 50px;
+    padding: 30px 0 25px 0;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid #bcbdc0;
+    border-bottom: 1px solid #bcbdc0;
+    border-left: 1px solid #babdc0;
+}
+
+/* Border under box when you move script in the last example */
+p + script + h3 {
+    padding-bottom: 20px; /* 下内边距 */
+    border-bottom: 1px solid #bcbdc0;
+}
+
+/* Fix for full-screen background image: Chrome on Android */
+html {
+    height: 100%;
+    min-height: 100%;/* 元素的高度设置一个最低限制。因此，元素可以比指定值高，但不能比其矮。不允许指定负值 */
+}
+
+body {
+    min-height: 100%;
+}
