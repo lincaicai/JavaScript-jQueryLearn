@@ -74,6 +74,7 @@ h2 {
     text-transform: uppercase;
     display: inline-block;
 }
+
 #cost {
     position: relative; /* 生成相对定位的元素，相对于其正常位置进行定位。 */
     top: 1em;
