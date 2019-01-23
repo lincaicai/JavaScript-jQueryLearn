@@ -56,7 +56,7 @@ h2 {
     font-weight: bold;
 }
 
-#cost {
+#cost, .action {
     background-color: #f84c53;
     color: #fff;
     width: auto;
@@ -80,6 +80,37 @@ h2 {
     top: 1em;
     right: 2em;
 } 
+
+.action {
+    position: relative;
+    top: 1.3em;
+    right: -2.3em;
+}
+
+.message {
+    font-weight: bold;
+    line-height: 1.5em; /*ine-height 属性设置行间的距离（行高）。*/
+    height: 2em;
+    display: block; /* 此元素将显示为块级元素，此元素前后会带有换行符。 */
+    clear: left;
+    min-width: 10em;
+}
+
+.message span {
+    font-weight: normal;
+}
+
+.true, .false {
+    background: url("../images/tick-cross.png");
+    display: block;
+    float: right; /* 元素向右浮动 */
+    height: 25px; /* 牛逼 利用css把图片截取没了 */
+    width: 25px;
+}
+
+.false {
+    background-position: 0 -25px;
+}
 
 a {
     color: #e3bb5a;
